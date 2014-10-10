@@ -55,6 +55,9 @@ class ConfigError(Exception):
 
 
 options = [
+    (('--browser',),
+      dict(help="input name of browser with which to run tests")),
+      
     (('-c', '--no-color'),
      dict(action='store_false', dest='color',
           help="Disable the use of ANSI color escapes.")),
